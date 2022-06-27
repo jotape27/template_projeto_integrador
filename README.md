@@ -5,8 +5,10 @@ Trabalho desenvolvido durante a disciplina de Banco de Dados do Integrado
 
 ### 1. COMPONENTES<br>
 Integrantes do grupo<br>
-primeiro_componente_do_grupo:email_primeiro_componente@dominio.com<br>
-segundo_componente_do_grupo:email_segundo_componente@dominio.com<br>
+Ian Luiz Mendonça Fracalossi: ianluiz.fracalossi@gmail.com
+<br>
+Juan Pablo de Luis Ferreira: jplferreira27@gmail.com<br>
+João Pedro Marchesi Tavares: joaomarchesi0408ofc@outlook.com <br>
 ...
 
 ### 2.MINIMUNDO<br>
@@ -15,7 +17,12 @@ Entrevista com o usuário e identificação dos requisitos.(quando for o caso de
 Descrição textual das regras de negócio definidas como um subconjunto do mundo real cujos elementos são propriedades que desejamos incluir, processar, armazenar, gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
 <br>
 
-> O sistema proposto para a "Devcom Projetos conterá as informacões aqui detalhadas. Dos Projetos serão armazenados o número, nome e cidade. Dos Departamentos serão armazenados o número e nome. O cliente destacou que cada projeto pode ter vários departamentos auxiliando no seu desenvolvimento, e cada departamento pode estar envolvido em vários projetos. Os dados relativos aos empregados que serão armazenados são: rg, nome, cpf, salário, data inicial do salario e supervisor de cada empregado. É importante destacar que cada empregado pode ser supervisionado por outro empregado, e obrigatoriamente deve estar alocado a um único departamento, mas pode gerenciar vários departamentos ou não gerenciar nenhum. Um empregado também pode participar de vários projetos, caso seja necessário, mas não precisa obrigatoriamente estar alocado em algum projeto. Com relação aos dependentes serão armazenadas as informações de nome do dependente, data de nascimento, sexo e grau de parentesco. Cada empregado pode ter vários dependentes, mas um dependente esta associado apenas a um único empregado. Com relação ao histórico de salário devemos armazenar as informações de valor do salário, data de início do salário no período e data final do salário no período. É importante lembrar que cada funcionario pode ter diversos eventos de histórico de salário associados a ele visto que este dado pode ser alterado várias vezes..
+> Diariamente, milhares de brasileiros têm que lidar com o dinheiro, receber, gastar, parcelar… Contudo, mesmo que em nossa sociedade todos os habitantes tenham que utilizar em algum momento o dinheiro, são poucos os que sabem gerir de forma saudável as suas despesas, restando à maioria se apertar no fim do mês ou até mesmo contrair dívidas. Pensando neste problema é que foi desenvolvido o “Plano”. <br>
+O sistema proposto para o "Plano” conterá as informações aqui detalhadas. Do usuário será salvo um código, nome, sobrenome, gênero, cpf, data de nascimento, senha, endereço e contato. É importante ressaltar que um usuário pode ter mais de um contato e de tipos diferentes (como dois e-mails e um celular), mas só pode ter um endereço. Endereço esse que deve possuir número, cep, tipo de logradouro, estado e cidade. <br>
+Cada usuário ao se cadastrar no aplicativo responderá um formulário onde montará o seu planejamento financeiro, deste formulário deve ser salvo as porcentagens desejadas pelo usuário para cada tipo de gasto que são fixo ou variável ou investimento, porém ao longo do uso da aplicação o usuário pode criar sub categorias próprias dentro dessas 3 categorias.<br>
+Ao longo do uso da plataforma o usuário irá inserir gastos que devem ser separados por categorias (ou subcategorias), desses gastos devem ser armazenados um id e um valor.<br>
+Baseado nos gastos do usuário, o enquadrará em um dos 3 seguintes perfis: investidor, moderado, ou gastador. E baseado no perfil do usuário será enviada a ele recomendações, recomendações essas que podem ser enviadas que só podem ser enviadas para um tipo de usuário, mas o tipo de usuário pode receber mais de uma ou nenhuma recomendação.
+
  
  
 ### 3.PMC<br>
@@ -26,10 +33,74 @@ a) inclusão do PMC desenvolvido pelo grupo <br>
 ### 4.Personas e Histórias de usuário<br>
 <img src="https://neilpatel.com/wp-content/uploads/2019/07/exemplo-carlos.png" Personas src="https://neilpatel.com/wp-content/uploads/2019/07/exemplo-carlos.png" width="500" height="500" /> <br>
 a) inclusão dos Persons desenvolvidos pelo grupo<br>
+-Link para o pdf com as personas: 
+https://drive.google.com/file/d/1R8walv6AVav6gdBcb_ew2KolWRMcw7ml/view?usp=sharing
+
 <br>
 <img src="https://miro.medium.com/max/1400/1*r5GVnOvqpMdxnGUYNRXqbg.png" UserStory src="https://miro.medium.com/max/1400/1*r5GVnOvqpMdxnGUYNRXqbg.png" width="500" height="300" /> <br>
 b) inclusão das Histórias de usuário desenvolvidas pelo grupo
 <br>
+Giuseppe:
+
+Eu Giuseppe quero sair das minhas dívidas para investir para o futuro da minha família.
+
+Eu Giuseppe quero atuar novamente no ramo de advocacia para me ajustar financeiramente.
+
+Eu, Giuseppe quero me ajustar financeiramente para que meu futuro filho tenha uma boa vida.
+
+Eu, Giuseppe quero empreender para possuir uma renda maior e liberdade financeira.
+
+Eu, Giuseppe quero estudar mais para possuir uma gama maior de conhecimento.
+
+Eu, Giuseppe quero ter mais conhecimento para abrir minha própria empresa.
+
+Eu, Giuseppe quero ter dinheiro guardado para manutenção do carro.
+
+Eu, Giuseppe quero que meu filho tenha uma boa vida para ser feliz.
+
+Eu, Giuseppe quero ter um grande patrimônio com a minha sonhada empresa para me aposentar sem precisar do INSS.
+
+Eu, Giuseppe quero saber quanto eu gasto como motorista para não ficar no prejuízo.
+
+Eu, Giuseppe quero juntar dinheiro para imprevistos
+
+Paula:
+
+Eu, Paula, quero fazer muitas apresentações teatrais para aumentar as minhas chances de ir para a tv e ficar famosa.
+
+Eu, Paula, quero comprar roupas, acessórios, materiais, maquiagem, etc. para fazer os figurinos e o cenário das peças.
+
+Eu, Paula, quero evitar gastar mais do que devo na produção das peças para não me endividar
+
+Eu, Paula, quero fazer uma poupança para viajar o mundo
+
+Eu,Paula, quero saber quanto ganho em média com as peças teatrais para saber quanto posso gastar
+
+Eu, Paula, quero fazer cursos para evoluir e aumentar as minhas chances de trabalhar na televisão
+
+Eu, Paula, quero reservar parte do que arrecado com as apresentações para investir em propaganda
+
+Eu, Paula, quero diminuir meus gastos com festas e compras pessoais para que possa investir este dinheiro em minha evolução pessoal
+
+Kiko:
+
+Eu, Kiko, tenho o objetivo de atingir um patamar um pouco acima de estável e ter uma boa quantia do meu dinheiro aplicada em investimentos.
+
+Eu, Kiko, quero investir em ações de fundo imobiliário este mês.
+
+Eu, Kiko, quero juntar uma parcela do meu dinheiro e destiná-la a uma viagem com minha família para assistir a Fórmula 1 em outro país.
+
+Eu, Kiko, quero financiar uma casa própria em um condomínio fechado e seguro para meus filhos.
+
+Eu, Kiko, quero trocar meu carro neste ano, de preferência daqui a uns 4 meses.
+
+Eu, Kiko, quero pagar boletos de ingressos e inscrições que fiz para participar de eventos no mês que vem.
+
+Eu, Kiko, preciso que uma parcela do meu lucro seja retirada para um fundo de reserva da minha família.
+
+Eu, Kiko, preciso retirar uma parte do meu lucro mensal para investir na minha empresa, em marketing e estoque para aumentar as vendas.
+
+Eu, Kiko, quero levar meus filhos para conhecer a Disney, Orlando no final deste ano em que estamos.
 
 
 ### 5.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
