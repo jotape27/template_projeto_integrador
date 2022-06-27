@@ -104,24 +104,23 @@ Eu, Kiko, quero levar meus filhos para conhecer a Disney, Orlando no final deste
 
 
 ### 5.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
-Neste ponto a codificação não e necessária, somente as ideias de telas devem ser desenvolvidas. O princípio aqui é pensar na criação da interface para identificar possíveis informações a serem armazenadas e/ou descartadas <br>
-
-Sugestão: https://balsamiq.com/products/mockups/<br>
-
-![Alt text](https://github.com/discproint/template_projeto_integrador/blob/main/arquivos/balsamiq.png?raw=true "Title")
-![Arquivo PDF do Protótipo Balsamiq feito para Empresa Devcom](https://github.com/discproint/template_projeto_integrador/blob/main/arquivos/EmpresaDevcom.pdf?raw=true "Empresa Devcom")
+Link para a visão interativa (clicável):<br>
+https://www.figma.com/proto/CmBxGx9ocNESOt9CFGUwpB/Prot%C3%B3tipo_appPLANO
+?node-id=43%3A366&scaling=min-zoom&page-id=14%3A12&starting-point-node-id=43%3A
+366&show-proto-sidebar=1
 
 
 #### 5.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
-    a) O sistema proposto poderá fornecer quais tipos de relatórios e informaçes? 
+    a) O sistema proposto poderá fornecer quais tipos de relatórios e informaçes?
+    R= Relatórios financeiros e comportamentais.
     b) Crie uma lista com os 5 principais relatórios que poderão ser obtidos por meio do sistema proposto!
     
 > A Empresa DevCom precisa inicialmente dos seguintes relatórios:
-* Relatório que informe quais são os gerentes de cada departamento incluindo as seguintes informações: número do departamento,  nome do departamento, e nome do gerente.
-* Relatório de empregados por projeto incluindo as seguintes informações: número do projeto, nome do projeto, rg do empregado, nome do empregado e quantidade de horas de trabalho do empregado alocadas ao projeto.
-* Relatório de empregados com dependentes incluindo as seguintes informações: rg do empregado, nome do empregado, nome do dependente, tipo de relação, data de nascimento do dependente e sexo do dependente.
-* Relatório com a quantidade de empregados por cada departamento incluindo as seguintes informações: nome do departamento, supervisor e quantidade de empregados alocados no departamento.
-* Relatório de supervisores e supervisionados incluindo as seguintes informações: nome do supervisor e nome do supervisionado.
+* Relatório que informe quanto o usuário gasta em cada segmento;
+* Relatório que informe o perfil do usuário;
+* Relatório que informe o período em que o(s) usuário(s) mais gastam ou mais recebem;
+* Relatório com o que o usuário pode alterar em seu estilo de vida para chegar mais próximo de seus objetivos;
+* Relatórios anuais/semestrais/mensais próprios de cada usuário mostrando quanto e quando gastaram em cada segmento e o que divergiu do planejado;
  
 
 ### 6 TABELA DE DADOS DO SISTEMA:
@@ -130,7 +129,8 @@ Sugestão: https://balsamiq.com/products/mockups/<br>
  <br> (veja o exemplo abaixo antes de criar a tabela para seu trabalho)
     C) Após criada esta tabela não deve ser modificada, pois será comparada com os resultados finais na conclusão do trabalho
     
-![Exemplo de Tabela de dados da Empresa Devcom](https://github.com/discproint/template_projeto_integrador/blob/main/arquivos/TabelaEmpresaDevCom_sample.xlsx?raw=true "Tabela - Empresa Devcom")
+- Link da tabela pelo google sheets:
+https://docs.google.com/spreadsheets/d/1s4wmULWn_9KoRZsGnXPrTnzQYAWsIEDZEnz-xhL_uBM/edit?usp=sharing
 
 
  
