@@ -9,7 +9,7 @@ Ian Luiz Mendonça Fracalossi: ianluiz.fracalossi@gmail.com
 <br>
 Juan Pablo de Luis Ferreira: jplferreira27@gmail.com<br>
 João Pedro Marchesi Tavares: joaomarchesi0408ofc@outlook.com <br>
-...
+
 
 ### 2.MINIMUNDO<br>
 Descrever o mini-mundo! (Não deve ser maior do que 30 linhas, se necessário resumir para justar)
@@ -36,8 +36,6 @@ a) inclusão dos Persons desenvolvidos pelo grupo<br>
 -Link para o pdf com as personas: 
 https://drive.google.com/file/d/1R8walv6AVav6gdBcb_ew2KolWRMcw7ml/view?usp=sharing
 
-<br>
-<img src="https://miro.medium.com/max/1400/1*r5GVnOvqpMdxnGUYNRXqbg.png" UserStory src="https://miro.medium.com/max/1400/1*r5GVnOvqpMdxnGUYNRXqbg.png" width="500" height="300" /> <br>
 b) inclusão das Histórias de usuário desenvolvidas pelo grupo
 <br>
 Giuseppe:
@@ -115,7 +113,7 @@ https://www.figma.com/proto/CmBxGx9ocNESOt9CFGUwpB/Prot%C3%B3tipo_appPLANO
     R= Relatórios financeiros e comportamentais.
     b) Crie uma lista com os 5 principais relatórios que poderão ser obtidos por meio do sistema proposto!
     
-> A Empresa DevCom precisa inicialmente dos seguintes relatórios:
+> O sistema Plano precisa inicialmente dos seguintes relatórios:
 * Relatório que informe quanto o usuário gasta em cada segmento;
 * Relatório que informe o perfil do usuário;
 * Relatório que informe o período em que o(s) usuário(s) mais gastam ou mais recebem;
