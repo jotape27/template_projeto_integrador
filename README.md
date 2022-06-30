@@ -1,4 +1,4 @@
-# TRABALHO DE PI:  Título do Trabalho
+# TRABALHO DE PI:  Plano
 Trabalho desenvolvido durante a disciplina de Banco de Dados do Integrado
 
 # Sumário
