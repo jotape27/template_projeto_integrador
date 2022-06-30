@@ -146,7 +146,7 @@ https://www.figma.com/proto/CmBxGx9ocNESOt9CFGUwpB/Prot%C3%B3tipo_appPLANO
         
 ![Alt text](https://github.com/ianf27/template_projeto_integrador/blob/main/arquivos/modeloConceitualAtualizado.png?raw=true "Modelo Conceitual")
 
-b) As 3 principais entidades do sistema são: USUÁRIO, GASTO E PLANEJAMENTO
+b) As 3 principais entidades do sistema são: USUÁRIO, GASTO E PLANEJAMENTO <br>
 c) Prinicpais fluxos do sistema: USUÁRIO, ENDERECO E GASTO
       
     
