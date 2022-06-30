@@ -107,6 +107,11 @@ Link para a visão interativa (clicável):<br>
 https://www.figma.com/proto/CmBxGx9ocNESOt9CFGUwpB/Prot%C3%B3tipo_appPLANO
 ?node-id=43%3A366&scaling=min-zoom&page-id=14%3A12&starting-point-node-id=43%3A
 366&show-proto-sidebar=1
+<br>
+
+Link para visão geral como visualizador:
+https://www.figma.com/file/CmBxGx9ocNESOt9CFGUwpB/Prot%C3%B3tipo_appPLANO?node-id=14%3A12
+
 
 
 #### 5.1 QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM O SISTEMA PROPOSTO?
