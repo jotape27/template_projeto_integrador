@@ -125,7 +125,7 @@ https://www.figma.com/proto/CmBxGx9ocNESOt9CFGUwpB/Prot%C3%B3tipo_appPLANO
 ### 6 TABELA DE DADOS DO SISTEMA:
     A) Esta tabela deve conter **todos os atributos do sistema** e um mínimo de 10 linhas/registros de dados.
     B) Esta tabela tem a intenção de simular um relatório com todos os dados que serão armazenados 
- <br> (veja o exemplo abaixo antes de criar a tabela para seu trabalho)
+ <br> 
     C) Após criada esta tabela não deve ser modificada, pois será comparada com os resultados finais na conclusão do trabalho
     
 
