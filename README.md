@@ -128,9 +128,8 @@ https://www.figma.com/proto/CmBxGx9ocNESOt9CFGUwpB/Prot%C3%B3tipo_appPLANO
  <br> (veja o exemplo abaixo antes de criar a tabela para seu trabalho)
     C) Após criada esta tabela não deve ser modificada, pois será comparada com os resultados finais na conclusão do trabalho
     
-- Link da tabela pelo google sheets:
-https://docs.google.com/spreadsheets/d/1s4wmULWn_9KoRZsGnXPrTnzQYAWsIEDZEnz-xhL_uBM/edit?usp=sharing
 
+![Tabela](https://github.com/ianf27/template_projeto_integrador/blob/main/arquivos/tabelaDados.png?raw=true "Tabela")
 
  
  
