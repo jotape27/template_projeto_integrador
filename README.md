@@ -31,7 +31,7 @@ a) inclusão do PMC desenvolvido pelo grupo <br>
 ![Exemplo de PMC](https://github.com/ianf27/template_projeto_integrador/blob/main/arquivos/PMC_corrigido.png?raw=true "PMC")
 
 ### 4.Personas e Histórias de usuário<br>
-<img src="https://github.com/ianf27/template_projeto_integrador/blob/main/arquivos/Curr%C3%ADculo%20de%20Est%C3%A1gio%20para%20Estudante%20Simples%20em%20Bege.png /> <br>
+![Exemplo de Persona]("https://github.com/ianf27/template_projeto_integrador/blob/main/arquivos/Curr%C3%ADculo%20de%20Est%C3%A1gio%20para%20Estudante%20Simples%20em%20Bege.png ?raw=true "Persona") <br>
 a) inclusão dos Personas desenvolvidos pelo grupo<br>
 -Link para o pdf com as personas: 
 https://drive.google.com/file/d/1R8walv6AVav6gdBcb_ew2KolWRMcw7ml/view?usp=sharing
