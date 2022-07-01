@@ -36,7 +36,7 @@ a) inclusão do PMC desenvolvido pelo grupo <br>
 
  <br>
 a) inclusão dos Personas desenvolvidos pelo grupo<br>
--Link para o pdf com as personas: 
+-Link para o pdf com todas as personas: 
 https://drive.google.com/file/d/1R8walv6AVav6gdBcb_ew2KolWRMcw7ml/view?usp=sharing
 
 b) inclusão das Histórias de usuário desenvolvidas pelo grupo
