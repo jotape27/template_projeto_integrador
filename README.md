@@ -158,9 +158,68 @@ c) Prinicpais fluxos do sistema: USUÁRIO, ENDERECO E GASTO
 #### 7.1 Descrição dos dados 
     [objeto]: [descrição do objeto]
     
-    EXEMPLO:
-    CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
-    CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
+    USUARIO : tabela que armazena as informações dos usuários.
+id :  campo que armazena o código para identificação do usuário, gerado pelo sistema.
+nome :  campo que armazena o primeiro nome do usuário fornecido pelo usuário.
+sobrenome :  campo que armazena o sobrenome do usuário fornecido pelo usuário.
+genero :  campo que armazena o sexo do usuário fornecido pelo usuário.
+cpf :  campo que armazena o número de Cadastro de Pessoa Física para cada usuário.
+dat_nasc :  campo que armazena a data de nascimento do usuário fornecida pelo usuário.
+senha :  campo que armazena a senha criptografada do usuário.
+id_endereco : chave para relacionar o usuário ao seu endereço.
+
+ENDERECO : tabela que armazena as informações dos endereços dos usuários.
+id : campo que armazena o código para identificação do endereço, gerado pelo sistema.
+cep : campo que armazena o Código de Endereçamento Postal no Brasil do endereço fornecido pelo usuário.
+desc_logradouro: campo que armazena o nome do logradouro (nome da rua, avenida, etc) do endereço fornecido pelo usuário.
+num :  campo que armazena o número do endereço fornecido pelo usuário.
+cidade : campo que armazena a cidade do endereço fornecido pelo usuário.
+uf : campo que armazena a Unidade Federativa do endereço fornecido pelo usuário.
+id_logradouro : chave para relacionar o endereço ao seu logradouro.
+
+LOGRADOURO: tabela que armazena as informações dos tipos de logradouro
+id : campo que armazena o código para identificação do logradouro, gerado pelo sistema.
+tp_logradouro: campo que armazena o tipo de logradouro (rua, avenida, etc).
+
+TIPO_CONTATO : tabela que armazena as informações dos tipos de contato.
+id : campo que armazena o código para identificação do tipo de contato, gerado pelo sistema.
+tp_logradouro: campo que armazena a descrição do tipo de contato(celular, email, etc).
+
+Usuário_TpConato : tabela de relacionamento entre USUARIO E TIPO_CONTATO que armazena os contatos fornecidos pelos usuários.
+desc :  campo que armazena o contato(Ex: 99996874594 ou ianluiz.fracalossi@gmail.com).
+
+PROFISSAO :  tabela que armazena as profissões dos usuários.
+id : campo que armazena o código para identificaçãoda profissão, gerado pelo sistema.
+desc : campo que armazena a descrição da profissão.
+
+Usuario_Profissao :  tabela de relacionamento entre USUARIO E PROFISSAO que armazena os dados das profissões de cada usuário.
+id :  campo que armazena o código para identificação da profissão do usuário, gerado pelo sistema.
+renda :  campo que armazena o valor da renda do usuário com esta profissão.
+
+TIPO_GASTO: tabela que armazena as informações das categorias de tipo de gasto.
+id : campo que armazena o código para identificação tipo de gasto, gerado pelo sistema.
+desc_tpGasto : campo que armazena o nome da categoria (fixo, variável ou investimento)
+
+GASTO :  tabela que armazena as despesas feitas pelo usuário.
+id: campo que armazena o código para identificação do gasto, gerado pelo sistema.
+valor: campo que armazena o valor do gasto fornecido pelo usuário.
+
+PLANEJAMENTO:  tabela que armazena os dados do planejamento financeiro feito pelo usuário.
+id : campo que armazena o código para identificação de cada categoria do planejamento, gerado pelo sistema.
+porcentagem :  campo que armazena o valor em porcentagem que o usuário pretende gastar com cada categoria, fornecido pelo usuário.
+
+Usuário_TpGasto : tabela de relacionamento que armazena os dados das subcategorias criadas pelos usuários, se relaciona de n para n com as entidades TIPO_GASTO, GASTO, PLANEJAMENTO e USUARIO
+id: campo que armazena o código para identificação de cada sub-categoria criada, gerado pelo sistema.
+desc : descrição da sub-categoria.
+
+PERFIL : tabela que armazena os dados dos tipos de perfil de usuário no sistema.
+id : campo que armazena o código para identificação de cada perfil de usuário, gerado pelo sistema.
+perfil : descrição do perfil.
+
+RECOMENDACAO : tabela que armazena as recomendações que serão enviadas ao usuário baseadas no perfil do mesmo.
+id : campo que armazena o código para identificação de cada recomendação, gerado pelo sistema.
+desc : descrição da recomendação.
+
 
 ### 8	RASTREABILIDADE DOS ARTEFATOS<br>
         a) Historia de usuários vs protótipo (mockup)
