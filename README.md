@@ -26,7 +26,6 @@ Baseado nos gastos do usuário, o enquadrará em um dos 3 seguintes perfis: inve
  
  
 ### 3.PMC<br>
-![Exemplo de PMC](https://github.com/discproint/template_projeto_integrador/blob/main/arquivos/PMC.jpg?raw=true "PMC")
 a) inclusão do PMC desenvolvido pelo grupo <br>
 
 ![Exemplo de PMC](https://github.com/ianf27/template_projeto_integrador/blob/main/arquivos/PMC_corrigido.png?raw=true "PMC")
