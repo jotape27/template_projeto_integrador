@@ -105,6 +105,8 @@ Eu, Kiko, quero levar meus filhos para conhecer a Disney, Orlando no final deste
 
 
 ### 5.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
+![Alt text](https://github.com/ianf27/template_projeto_integrador/blob/main/arquivos/Rascunho_app.png?raw=true "Rascunho App")
+
 Link para a visão interativa (clicável):<br>
 https://www.figma.com/proto/CmBxGx9ocNESOt9CFGUwpB/Prot%C3%B3tipo_appPLANO
 ?node-id=43%3A366&scaling=min-zoom&page-id=14%3A12&starting-point-node-id=43%3A
