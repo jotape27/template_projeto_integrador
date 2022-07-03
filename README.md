@@ -231,7 +231,9 @@ desc : descrição da recomendação.<br>
         (não serão aceitos modelos que não estejam em conformidade)
         c) Backlog (caso solicitado)
         
+a) ![Alt text](https://github.com/ianf27/template_projeto_integrador/blob/main/arquivos/rastreabilidade.png?raw=true "Rastreabilidade")
 
+b) 
 
 ### 9	MODELO LÓGICO<br>
         a) inclusão do esquema lógico do banco de dados
