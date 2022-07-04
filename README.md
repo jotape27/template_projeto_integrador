@@ -234,7 +234,7 @@ desc : descrição da recomendação.<br>
 a) <br>![Alt text](https://github.com/ianf27/template_projeto_integrador/blob/main/arquivos/rastreabilidade.png?raw=true "Rastreabilidade") <br>
 ![Alt text](https://github.com/ianf27/template_projeto_integrador/blob/main/arquivos/Rastreabilidade_Giuseppe.png?raw=true "Rastreabilidade")
 
-b) ![Alt text](https://github.com/ianf27/template_projeto_integrador/blob/main/arquivos/prototipVSconceit.png?raw=true "Rastreabilidade")
+b) <br>![Alt text](https://github.com/ianf27/template_projeto_integrador/blob/main/arquivos/prototipVSconceit.png?raw=true "Rastreabilidade")
 
 
 ### 9	MODELO LÓGICO<br>
