@@ -232,7 +232,8 @@ desc : descrição da recomendação.<br>
         c) Backlog (caso solicitado)
         
 a) <br>![Alt text](https://github.com/ianf27/template_projeto_integrador/blob/main/arquivos/rastreabilidade.png?raw=true "Rastreabilidade") <br>
-![Alt text](https://github.com/ianf27/template_projeto_integrador/blob/main/arquivos/Rastreabilidade_Giuseppe.png?raw=true "Rastreabilidade")
+![Alt text](https://github.com/ianf27/template_projeto_integrador/blob/main/arquivos/Rastreabilidade_Giuseppe.png?raw=true "Rastreabilidade")<br>
+![Alt text](https://github.com/ianf27/template_projeto_integrador/blob/main/arquivos/rastreabilidade_kiko.jpeg?raw=true "Rastreabilidade")
 
 b) <br>![Alt text](https://github.com/ianf27/template_projeto_integrador/blob/main/arquivos/prototipVSconceit.png?raw=true "Rastreabilidade")
 
