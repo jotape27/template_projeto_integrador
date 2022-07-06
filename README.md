@@ -155,7 +155,7 @@ https://www.figma.com/file/CmBxGx9ocNESOt9CFGUwpB/Prot%C3%B3tipo_appPLANO?node-i
         
 ![Alt text](https://github.com/ianf27/template_projeto_integrador/blob/main/arquivos/modeloConceitualAtualizado.png?raw=true "Modelo Conceitual")
 
--Link para download do modelo conceitual:
+<b>-Link para download do modelo conceitual:<br></b>
 https://drive.google.com/file/d/1GCdcMLUcqqwjSyBakIJsP9W4dp88PAgi/view?usp=sharing
 
 b) As 3 principais entidades do sistema são: USUÁRIO, GASTO E PLANEJAMENTO <br>
@@ -247,8 +247,8 @@ b) <br>![Alt text](https://github.com/ianf27/template_projeto_integrador/blob/ma
         (não serão aceitos modelos que não estejam em conformidade)<br>
         
 a) <br>![Alt text](https://github.com/ianf27/template_projeto_integrador/blob/main/arquivos/Modelo_Logico_Certo.jpg?raw=true "Modelo Conceitual")<br>
-
--Link para download do modelo lógico:
+<br>
+<b>-Link para download do modelo lógico:</b><br>
 https://drive.google.com/file/d/1vYP2itokJRF3-wPpX-PKyzi4S3qjjEA1/view?usp=sharing
         
         
@@ -421,9 +421,9 @@ ALTER TABLE Perfil_Recomendacao ADD CONSTRAINT FK_Perfil_Recomendacao_2
     FOREIGN KEY (fk_RECOMENDACAO_id)
     REFERENCES RECOMENDACAO (id)
     ON DELETE SET NULL;
+  <br><br>
   
-  
--Link para download do modelo físico:
+<b>-Link para download do modelo físico:</b><br>
 https://drive.google.com/file/d/1iXLgoSvSn7tmQtdtNOuo9D7bHImd9JDx/view?usp=sharing
     
         
