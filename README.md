@@ -5,6 +5,8 @@ Trabalho desenvolvido durante a disciplina de Banco de Dados do Integrado
 
 <a href="modelo_logico_PI.sql" target="_blank">
 -Link para o pdf com todas as personas: </a>
+![Alt text](https://github.com/ianf27/template_projeto_integrador/blob/main/arquivos/modelo_logico_PI.sql?raw=true "Rascunho App")
+
 
 ### 1. COMPONENTES<br>
 Integrantes do grupo<br>
