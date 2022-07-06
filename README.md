@@ -3,6 +3,9 @@ Trabalho desenvolvido durante a disciplina de Banco de Dados do Integrado
 
 # Sumário
 
+<a href="modelo_logico_PI.sql" target="_blank">
+-Link para o pdf com todas as personas: </a>
+
 ### 1. COMPONENTES<br>
 Integrantes do grupo<br>
 Ian Luiz Mendonça Fracalossi: ianluiz.fracalossi@gmail.com
