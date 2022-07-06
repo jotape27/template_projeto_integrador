@@ -243,7 +243,7 @@ b) <br>![Alt text](https://github.com/ianf27/template_projeto_integrador/blob/ma
         b) verificação de correspondencia com o modelo conceitual 
         (não serão aceitos modelos que não estejam em conformidade)
         
-        ![Alt text](https://github.com/ianf27/template_projeto_integrador/blob/main/arquivos/modeloConceitualAtualizado.png?raw=true "Modelo Conceitual")
+        ![Alt text](https://github.com/ianf27/template_projeto_integrador/blob/main/arquivos/Modelo_Logico.jpg?raw=true "Modelo Conceitual")
 
 ### 10	MODELO FÍSICO<br>
         a) inclusão das instruções de criacão das estruturas em SQL/DDL 
