@@ -154,7 +154,7 @@ https://www.figma.com/file/CmBxGx9ocNESOt9CFGUwpB/Prot%C3%B3tipo_appPLANO?node-i
         Criar o esquema de forma a garantir a redução de informação redundante, possibilidade de valores null, 
         e tuplas falsas (Aplicar os conceitos de normalização abordados).   
         
-![Alt text](https://github.com/ianf27/template_projeto_integrador/blob/main/arquivos/modeloConceitualAtualizado.png?raw=true "Modelo Conceitual")
+![Alt text](https://github.com/ianf27/template_projeto_integrador/blob/main/arquivos/modeloconceitual.jpg?raw=true "Modelo Conceitual")
 
 <b>-Link para download do modelo conceitual:<br></b>
 https://drive.google.com/file/d/1GCdcMLUcqqwjSyBakIJsP9W4dp88PAgi/view?usp=sharing
@@ -247,7 +247,7 @@ b) <br>![Alt text](https://github.com/ianf27/template_projeto_integrador/blob/ma
         b) verificação de correspondencia com o modelo conceitual 
         (não serão aceitos modelos que não estejam em conformidade)<br>
         
-a) <br>![Alt text](https://github.com/ianf27/template_projeto_integrador/blob/main/arquivos/Modelo_Logico_Certo.jpg?raw=true "Modelo Conceitual")<br>
+a) <br>![Alt text](https://github.com/ianf27/template_projeto_integrador/blob/main/arquivos/modelologico.jpg?raw=true "Modelo Conceitual")<br>
 <br>
 <b>-Link para download do modelo lógico:</b><br>
 https://drive.google.com/file/d/1vYP2itokJRF3-wPpX-PKyzi4S3qjjEA1/view?usp=sharing
