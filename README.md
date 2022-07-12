@@ -258,17 +258,17 @@ https://drive.google.com/file/d/1vYP2itokJRF3-wPpX-PKyzi4S3qjjEA1/view?usp=shari
         a) inclusão das instruções de criacão das estruturas em SQL/DDL 
         (criação de tabelas, alterações, etc..) 
         
-        /* modelo_PI_atualizado: */
+        /* modelologico: */
 
-CREATE TABLE IF NOT EXISTS USUARIO (
+CREATE TABLE USUARIO (
     id integer PRIMARY KEY,
-    nome varchar(200),
     sobrenome varchar(200),
-    genero varchar,
-    cpf integer UNIQUE,
+    genero varchar(5),
+    cpf int,
     dat_nasc date,
-    senha varchar,
-    id_endereco integer,
+    senha varchar(500),
+    nome varchar(200),
+    id_Endereco integer,
     FK_PERFIL_id integer
 );
 
@@ -278,7 +278,7 @@ CREATE TABLE IF NOT EXISTS ENDERECO (
     desc_logradouro varchar(300),
     num integer,
     cidade varchar(200),
-    uf varchar,
+    uf varchar(5),
     id_Logradouro integer,
     FK_LOGRADOURO_id integer
 );
@@ -295,10 +295,10 @@ CREATE TABLE IF NOT EXISTS TIPO_CONTATO (
 
 CREATE TABLE IF NOT EXISTS PROFISSAO (
     id integer PRIMARY KEY,
-    desc varchar(150)
+    descricao varchar(150)
 );
 
-CREATE TABLE IF NOT EXISTS TIPO_GASTO (
+CREATE TABLE TIPO_GASTO (
     id integer PRIMARY KEY,
     desc_tpGasto varchar(150)
 );
@@ -314,13 +314,13 @@ CREATE TABLE IF NOT EXISTS PLANEJAMENTO (
 );
 
 CREATE TABLE IF NOT EXISTS PERFIL (
-    perfil varchar(100),
-    id integer PRIMARY KEY
+    id integer PRIMARY KEY,
+    perfil varchar(100)
 );
 
 CREATE TABLE IF NOT EXISTS RECOMENDACAO (
     id integer PRIMARY KEY,
-    desc varchar(500)
+    descricao varchar(500)
 );
 
 CREATE TABLE IF NOT EXISTS Usuario_Endereco (
@@ -331,7 +331,7 @@ CREATE TABLE IF NOT EXISTS Usuario_Endereco (
 CREATE TABLE IF NOT EXISTS Usuario_TpContato (
     fk_USUARIO_id integer,
     fk_TIPO_CONTATO_id integer,
-    desc varchar(500)
+    descricao varchar(150)
 );
 
 CREATE TABLE IF NOT EXISTS Usuario_Profissao (
