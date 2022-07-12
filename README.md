@@ -258,8 +258,7 @@ https://drive.google.com/file/d/1vYP2itokJRF3-wPpX-PKyzi4S3qjjEA1/view?usp=shari
         a) inclusão das instruções de criacão das estruturas em SQL/DDL 
         (criação de tabelas, alterações, etc..) 
         
-        /* modelologico: */
-
+        
 CREATE TABLE IF NOT EXISTS USUARIO (
     id integer PRIMARY KEY AUTO_INCREMENT,
     sobrenome varchar(200),
