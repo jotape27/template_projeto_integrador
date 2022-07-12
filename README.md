@@ -261,7 +261,7 @@ https://drive.google.com/file/d/1vYP2itokJRF3-wPpX-PKyzi4S3qjjEA1/view?usp=shari
         /* modelologico: */
 
 CREATE TABLE USUARIO (
-    id integer PRIMARY KEY,
+    id integer PRIMARY KEY AUTO_INCREMENT,
     sobrenome varchar(200),
     genero varchar(5),
     cpf int,
@@ -273,7 +273,7 @@ CREATE TABLE USUARIO (
 );
 
 CREATE TABLE IF NOT EXISTS ENDERECO (
-    id integer PRIMARY KEY,
+    id integer PRIMARY KEY AUTO_INCREMENT,
     cep varchar(50),
     desc_logradouro varchar(300),
     num integer,
@@ -284,42 +284,42 @@ CREATE TABLE IF NOT EXISTS ENDERECO (
 );
 
 CREATE TABLE IF NOT EXISTS LOGRADOURO (
-    id integer PRIMARY KEY,
+    id integer PRIMARY KEY AUTO_INCREMENT,
     tp_logradouro varchar(100)
 );
 
 CREATE TABLE IF NOT EXISTS TIPO_CONTATO (
-    id integer PRIMARY KEY,
+    id integer PRIMARY KEY AUTO_INCREMENT,
     tp_contato varchar(100)
 );
 
 CREATE TABLE IF NOT EXISTS PROFISSAO (
-    id integer PRIMARY KEY,
+    id integer PRIMARY KEY AUTO_INCREMENT,
     descricao varchar(150)
 );
 
 CREATE TABLE TIPO_GASTO (
-    id integer PRIMARY KEY,
+    id integer PRIMARY KEY AUTO_INCREMENT,
     desc_tpGasto varchar(150)
 );
 
 CREATE TABLE IF NOT EXISTS GASTO (
-    id integer PRIMARY KEY,
+    id integer PRIMARY KEY AUTO_INCREMENT,
     valor float
 );
 
 CREATE TABLE IF NOT EXISTS PLANEJAMENTO (
-    id integer PRIMARY KEY,
+    id integer PRIMARY KEY AUTO_INCREMENT,
     porcentagem integer
 );
 
 CREATE TABLE IF NOT EXISTS PERFIL (
-    id integer PRIMARY KEY,
+    id integer PRIMARY KEY AUTO_INCREMENT,
     perfil varchar(100)
 );
 
 CREATE TABLE IF NOT EXISTS RECOMENDACAO (
-    id integer PRIMARY KEY,
+    id integer PRIMARY KEY AUTO_INCREMENT,
     descricao varchar(500)
 );
 
@@ -338,7 +338,7 @@ CREATE TABLE IF NOT EXISTS Usuario_Profissao (
     fk_USUARIO_id integer,
     fk_PROFISSAO_id integer,
     renda float,
-    id integer PRIMARY KEY
+    id integer PRIMARY KEY AUTO_INCREMENT
 );
 
 CREATE TABLE IF NOT EXISTS Usuario_TpGasto_TIPO_GASTO_USUARIO_GASTO_PLANEJAMENTO (
