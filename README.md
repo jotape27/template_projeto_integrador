@@ -260,7 +260,7 @@ https://drive.google.com/file/d/1vYP2itokJRF3-wPpX-PKyzi4S3qjjEA1/view?usp=shari
         
         /* modelologico: */
 
-CREATE TABLE USUARIO (
+CREATE TABLE IF NOT EXISTS USUARIO (
     id integer PRIMARY KEY AUTO_INCREMENT,
     sobrenome varchar(200),
     genero varchar(5),
