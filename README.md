@@ -156,8 +156,6 @@ https://www.figma.com/file/CmBxGx9ocNESOt9CFGUwpB/Prot%C3%B3tipo_appPLANO?node-i
         
 ![Alt text](https://github.com/ianf27/template_projeto_integrador/blob/main/arquivos/modeloconceitual.jpg?raw=true "Modelo Conceitual")
 
-<b>-Link para download do modelo conceitual:<br></b>
-https://drive.google.com/file/d/1GCdcMLUcqqwjSyBakIJsP9W4dp88PAgi/view?usp=sharing
 
 b) As 3 principais entidades do sistema são: USUÁRIO, GASTO E PLANEJAMENTO <br>
 c) Prinicpais fluxos do sistema: USUÁRIO, ENDERECO E GASTO
@@ -249,8 +247,6 @@ b) <br>![Alt text](https://github.com/ianf27/template_projeto_integrador/blob/ma
         
 a) <br>![Alt text](https://github.com/ianf27/template_projeto_integrador/blob/main/arquivos/modelologico.jpg?raw=true "Modelo Conceitual")<br>
 <br>
-<b>-Link para download do modelo lógico:</b><br>
-https://drive.google.com/file/d/1vYP2itokJRF3-wPpX-PKyzi4S3qjjEA1/view?usp=sharing
         
         
         
@@ -421,11 +417,7 @@ ALTER TABLE Perfil_Recomendacao ADD CONSTRAINT FK_Perfil_Recomendacao_2
     FOREIGN KEY (fk_RECOMENDACAO_id)
     REFERENCES RECOMENDACAO (id)
     ON DELETE SET NULL;
-  <br><br>
-  
-<b>-Link para download do modelo físico:</b><br>
-https://drive.google.com/file/d/1iXLgoSvSn7tmQtdtNOuo9D7bHImd9JDx/view?usp=sharing
-    
+  <br><br>    
         
        
 ### 11	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
