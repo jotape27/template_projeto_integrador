@@ -156,6 +156,8 @@ https://www.figma.com/file/CmBxGx9ocNESOt9CFGUwpB/Prot%C3%B3tipo_appPLANO?node-i
         
 ![Alt text](https://github.com/ianf27/template_projeto_integrador/blob/main/arquivos/modeloconceitual.jpg?raw=true "Modelo Conceitual")
 
+<b>-Link para download do modelo conceitual:<br></b>
+https://drive.google.com/file/d/1GCdcMLUcqqwjSyBakIJsP9W4dp88PAgi/view?usp=sharing
 
 b) As 3 principais entidades do sistema são: USUÁRIO, GASTO E PLANEJAMENTO <br>
 c) Prinicpais fluxos do sistema: USUÁRIO, ENDERECO E GASTO
@@ -246,7 +248,10 @@ b) <br>![Alt text](https://github.com/ianf27/template_projeto_integrador/blob/ma
         (não serão aceitos modelos que não estejam em conformidade)<br>
         
 a) <br>![Alt text](https://github.com/ianf27/template_projeto_integrador/blob/main/arquivos/modelologico.jpg?raw=true "Modelo Conceitual")<br>
-<br>        
+<br>
+<b>-Link para download do modelo lógico:</b><br>
+https://drive.google.com/file/d/1vYP2itokJRF3-wPpX-PKyzi4S3qjjEA1/view?usp=sharing
+        
         
         
 ### 10	MODELO FÍSICO<br>
@@ -431,6 +436,11 @@ https://drive.google.com/file/d/1iXLgoSvSn7tmQtdtNOuo9D7bHImd9JDx/view?usp=shari
         b) Criar um novo banco de dados para testar a restauracao 
         (em caso de falha na restauração o grupo não pontuará neste quesito)
         c) formato .SQL
+        
+        PROFESSOR, INFELIZMENTE HOJE (11/07) O COMPUTADOR DO JUAN FERREIRA, QUE ESTAVA RESPONSÁVEL POR ESSA PARTE DA ATIVIDADE, DEU PERCA TOTAL POR VOLTA DÀS 21:03 E COM ISSO PERDEMOS TUDO REFERENTE A ESTA ATIVIDADE. 
+        <br>
+        ENTENDEMOS QUE TEREMOS DECRÉSCIMO NA NOTA, MAS SE PUDERMOS FAZER ALGUMA COISA NO PRÓXIMO SEMESTRE PARA SUPRIR ESSA PERDA SERÁ DE GRANDE AJUDA. <br>
+        DESDE JÁ, OBRIGADO PELA ATENÇÃO.
 
 
 ### 12	TABELAS E PRINCIPAIS CONSULTAS<br>
