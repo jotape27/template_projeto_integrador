@@ -264,7 +264,7 @@ CREATE TABLE USUARIO (
     id integer PRIMARY KEY AUTO_INCREMENT,
     sobrenome varchar(200),
     genero varchar(5),
-    cpf int,
+    cpf int UNIQUE,
     dat_nasc date,
     senha varchar(500),
     nome varchar(200),
