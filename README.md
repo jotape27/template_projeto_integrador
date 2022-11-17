@@ -245,7 +245,7 @@ b) <br>![Alt text](https://github.com/ianf27/template_projeto_integrador/blob/ma
         b) verificação de correspondencia com o modelo conceitual 
         (não serão aceitos modelos que não estejam em conformidade)<br>
         
-a) <br>![Alt text](https://github.com/ianf27/template_projeto_integrador/blob/main/arquivos/modelologico.jpg?raw=true "Modelo Conceitual")<br>
+a) <br>![Alt text](https://github.com/ianf27/template_projeto_integrador/blob/main/arquivos/modelo_logico_atualizado_final.jpg?raw=true "Modelo Conceitual")<br>
 <br>
         
         
