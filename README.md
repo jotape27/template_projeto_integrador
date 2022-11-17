@@ -255,168 +255,123 @@ a) <br>![Alt text](https://github.com/ianf27/template_projeto_integrador/blob/ma
         (criação de tabelas, alterações, etc..) 
         
         
-CREATE TABLE IF NOT EXISTS USUARIO (
-    id integer PRIMARY KEY AUTO_INCREMENT,
-    sobrenome varchar(200),
-    genero varchar(5),
-    cpf int UNIQUE,
-    dat_nasc date,
-    senha varchar(500),
-    nome varchar(200),
-    id_Endereco integer,
-    FK_PERFIL_id integer
+CREATE TABLE gasto (
+    id serial4 NOT NULL,
+    valor float8 NULL,
+    gasto varchar(500) NULL,
+    "data" date NULL,
+    CONSTRAINT gasto_pkey PRIMARY KEY (id)
+);<br><br>
+CREATE TABLE logradouro (
+    id serial4 NOT NULL,
+    tp_logradouro varchar(100) NULL,
+    CONSTRAINT logradouro_pkey PRIMARY KEY (id)
+);<br><br>
+CREATE TABLE perfil (
+    id serial4 NOT NULL,
+    perfil varchar(100) NULL,
+    CONSTRAINT perfil_pkey PRIMARY KEY (id)
+);<br><br>
+CREATE TABLE profissao (
+    id serial4 NOT NULL,
+    descricao varchar(150) NULL,
+    CONSTRAINT profissao_pkey PRIMARY KEY (id)
+);<br><br>
+CREATE TABLE recomendacao (
+    id serial4 NOT NULL,
+    descricao varchar(500) NULL,
+    CONSTRAINT recomendacao_pkey PRIMARY KEY (id)
+);<br><br>
+CREATE TABLE tipo_gasto (
+    id serial4 NOT NULL,
+    desc_tpgasto varchar(150) NULL,
+    CONSTRAINT tipo_gasto_pkey PRIMARY KEY (id)
+);<br><br>
+CREATE TABLE tipo_planejamento (
+    id serial4 NOT NULL,
+    tp_planejamento varchar(100) NULL,
+    CONSTRAINT tipo_planejamento_pkey PRIMARY KEY (id)
+);<br><br>
+CREATE TABLE endereco (
+    id serial4 NOT NULL,
+    cep varchar(50) NULL,
+    desc_logradouro varchar(300) NULL,
+    num int4 NULL,
+    cidade varchar(200) NULL,
+    uf varchar(5) NULL,
+    fk_logradouro_id int4 NULL,
+    CONSTRAINT endereco_pkey PRIMARY KEY (id),
+    CONSTRAINT fk_endereco_2 FOREIGN KEY (fk_logradouro_id) REFERENCES logradouro(id) ON
+DELETE CASCADE
+);<br><br>
+CREATE TABLE perfil_recomendacao (
+    fk_perfil_id int4 NULL,
+    fk_recomendacao_id int4 NULL,
+    CONSTRAINT fk_perfil_recomendacao_1 FOREIGN KEY (fk_perfil_id) REFERENCES perfil(id) ON DELETE
+    SET NULL,
+        CONSTRAINT fk_perfil_recomendacao_2 FOREIGN KEY (fk_recomendacao_id) REFERENCES recomendacao(id) ON DELETE
+    SET NULL
+);<br><br>
+CREATE TABLE planejamento (
+    id serial4 NOT NULL,
+    "data" date NULL,
+    porcentagem_fixo int4 NULL,
+    porcentagem_variavel int4 NULL,
+    porcentagem_lazer int4 NULL,
+    porcentagem_investimento int4 NULL,
+    CONSTRAINT planejamento_pkey PRIMARY KEY (id)
+);<br><br>
+CREATE TABLE usuario (
+    id serial4 NOT NULL,
+    nome varchar(200) NULL,
+    sobrenome varchar(200) NULL,
+    cpf varchar(50) NULL,
+    genero varchar(10) NULL,
+    nascimento date NULL,
+    senha varchar(500) NULL,
+    fk_perfil_id int4 NULL,
+    foto text NULL,
+    CONSTRAINT usuario_cpf_key UNIQUE (cpf),
+    CONSTRAINT usuario_pkey PRIMARY KEY (id),
+    CONSTRAINT fk_usuario_2 FOREIGN KEY (fk_perfil_id) REFERENCES perfil(id) ON DELETE
+    SET NULL
+);<br><br>
+CREATE TABLE usuario_endereco (
+    fk_usuario_id int4 NULL,
+    fk_endereco_id int4 NULL,
+    CONSTRAINT fk_usuario_endereco_1 FOREIGN KEY (fk_usuario_id) REFERENCES usuario(id) ON DELETE
+    SET NULL,
+        CONSTRAINT fk_usuario_endereco_2 FOREIGN KEY (fk_endereco_id) REFERENCES endereco(id) ON DELETE
+    SET NULL
+);<br><br>
+CREATE TABLE usuario_profissao (
+    fk_usuario_id int4 NULL,
+    fk_profissao_id int4 NULL,
+    renda float8 NULL,
+    id serial4 NOT NULL,
+    CONSTRAINT usuario_profissao_pkey PRIMARY KEY (id),
+    CONSTRAINT fk_usuario_profissao_2 FOREIGN KEY (fk_usuario_id) REFERENCES usuario(id) ON DELETE
+    SET NULL,
+        CONSTRAINT fk_usuario_profissao_3 FOREIGN KEY (fk_profissao_id) REFERENCES profissao(id) ON DELETE
+    SET NULL
+);<br><br>
+CREATE TABLE usuario_tpcontato (
+    fk_usuario_id int4 NULL,
+    email varchar(100) NULL,
+    celular varchar(100) NULL,
+    CONSTRAINT fk_usuario_tpcontato_1 FOREIGN KEY (fk_usuario_id) REFERENCES usuario(id) ON DELETE
+    SET NULL
+);<br><br>
+CREATE TABLE usuario_tpgasto_tipo_gasto_usuario_gasto_planejamento (
+    fk_tipo_gasto_id int4 NULL,
+    fk_usuario_id int4 NULL,
+    fk_gasto_id int4 NULL,
+    fk_planejamento_id int4 NULL,
+    CONSTRAINT fk_usuario_tpgasto_tipo_gasto_usuario_gasto_planejamento_1 FOREIGN KEY (fk_tipo_gasto_id) REFERENCES tipo_gasto(id),
+    CONSTRAINT fk_usuario_tpgasto_tipo_gasto_usuario_gasto_planejamento_2 FOREIGN KEY (fk_usuario_id) REFERENCES usuario(id),
+    CONSTRAINT fk_usuario_tpgasto_tipo_gasto_usuario_gasto_planejamento_3 FOREIGN KEY (fk_gasto_id) REFERENCES gasto(id),
+    CONSTRAINT fk_usuario_tpgasto_tipo_gasto_usuario_gasto_planejamento_4 FOREIGN KEY (fk_planejamento_id) REFERENCES planejamento(id)
 );
-
-CREATE TABLE IF NOT EXISTS ENDERECO (
-    id integer PRIMARY KEY AUTO_INCREMENT,
-    cep varchar(50),
-    desc_logradouro varchar(300),
-    num integer,
-    cidade varchar(200),
-    uf varchar(5),
-    id_Logradouro integer,
-    FK_LOGRADOURO_id integer
-);
-
-CREATE TABLE IF NOT EXISTS LOGRADOURO (
-    id integer PRIMARY KEY AUTO_INCREMENT,
-    tp_logradouro varchar(100)
-);
-
-CREATE TABLE IF NOT EXISTS TIPO_CONTATO (
-    id integer PRIMARY KEY AUTO_INCREMENT,
-    tp_contato varchar(100)
-);
-
-CREATE TABLE IF NOT EXISTS PROFISSAO (
-    id integer PRIMARY KEY AUTO_INCREMENT,
-    descricao varchar(150)
-);
-
-CREATE TABLE TIPO_GASTO (
-    id integer PRIMARY KEY AUTO_INCREMENT,
-    desc_tpGasto varchar(150)
-);
-
-CREATE TABLE IF NOT EXISTS GASTO (
-    id integer PRIMARY KEY AUTO_INCREMENT,
-    valor float
-);
-
-CREATE TABLE IF NOT EXISTS PLANEJAMENTO (
-    id integer PRIMARY KEY AUTO_INCREMENT,
-    porcentagem integer
-);
-
-CREATE TABLE IF NOT EXISTS PERFIL (
-    id integer PRIMARY KEY AUTO_INCREMENT,
-    perfil varchar(100)
-);
-
-CREATE TABLE IF NOT EXISTS RECOMENDACAO (
-    id integer PRIMARY KEY AUTO_INCREMENT,
-    descricao varchar(500)
-);
-
-CREATE TABLE IF NOT EXISTS Usuario_Endereco (
-    fk_USUARIO_id integer,
-    fk_ENDERECO_id integer
-);
-
-CREATE TABLE IF NOT EXISTS Usuario_TpContato (
-    fk_USUARIO_id integer,
-    fk_TIPO_CONTATO_id integer,
-    descricao varchar(150)
-);
-
-CREATE TABLE IF NOT EXISTS Usuario_Profissao (
-    fk_USUARIO_id integer,
-    fk_PROFISSAO_id integer,
-    renda float,
-    id integer PRIMARY KEY AUTO_INCREMENT
-);
-
-CREATE TABLE IF NOT EXISTS Usuario_TpGasto_TIPO_GASTO_USUARIO_GASTO_PLANEJAMENTO (
-    fk_TIPO_GASTO_id integer,
-    fk_USUARIO_id integer,
-    fk_GASTO_id integer,
-    fk_PLANEJAMENTO_id integer
-);
-
-CREATE TABLE IF NOT EXISTS Perfil_Recomendacao (
-    fk_PERFIL_id integer,
-    fk_RECOMENDACAO_id integer
-);
- 
-ALTER TABLE USUARIO ADD CONSTRAINT FK_USUARIO_2
-    FOREIGN KEY (FK_PERFIL_id)
-    REFERENCES PERFIL (id)
-    ON DELETE SET NULL;
- 
-ALTER TABLE ENDERECO ADD CONSTRAINT FK_ENDERECO_2
-    FOREIGN KEY (FK_LOGRADOURO_id)
-    REFERENCES LOGRADOURO (id)
-    ON DELETE CASCADE;
- 
-ALTER TABLE Usuario_Endereco ADD CONSTRAINT FK_Usuario_Endereco_1
-    FOREIGN KEY (fk_USUARIO_id)
-    REFERENCES USUARIO (id)
-    ON DELETE SET NULL;
- 
-ALTER TABLE Usuario_Endereco ADD CONSTRAINT FK_Usuario_Endereco_2
-    FOREIGN KEY (fk_ENDERECO_id)
-    REFERENCES ENDERECO (id)
-    ON DELETE SET NULL;
- 
-ALTER TABLE Usuario_TpContato ADD CONSTRAINT FK_Usuario_TpContato_1
-    FOREIGN KEY (fk_USUARIO_id)
-    REFERENCES USUARIO (id)
-    ON DELETE SET NULL;
- 
-ALTER TABLE Usuario_TpContato ADD CONSTRAINT FK_Usuario_TpContato_2
-    FOREIGN KEY (fk_TIPO_CONTATO_id)
-    REFERENCES TIPO_CONTATO (id)
-    ON DELETE SET NULL;
- 
-ALTER TABLE Usuario_Profissao ADD CONSTRAINT FK_Usuario_Profissao_2
-    FOREIGN KEY (fk_USUARIO_id)
-    REFERENCES USUARIO (id)
-    ON DELETE SET NULL;
- 
-ALTER TABLE Usuario_Profissao ADD CONSTRAINT FK_Usuario_Profissao_3
-    FOREIGN KEY (fk_PROFISSAO_id)
-    REFERENCES PROFISSAO (id)
-    ON DELETE SET NULL;
- 
-ALTER TABLE Usuario_TpGasto_TIPO_GASTO_USUARIO_GASTO_PLANEJAMENTO ADD CONSTRAINT FK_Usuario_TpGasto_TIPO_GASTO_USUARIO_GASTO_PLANEJAMENTO_1
-    FOREIGN KEY (fk_TIPO_GASTO_id)
-    REFERENCES TIPO_GASTO (id)
-    ON DELETE NO ACTION;
- 
-ALTER TABLE Usuario_TpGasto_TIPO_GASTO_USUARIO_GASTO_PLANEJAMENTO ADD CONSTRAINT FK_Usuario_TpGasto_TIPO_GASTO_USUARIO_GASTO_PLANEJAMENTO_2
-    FOREIGN KEY (fk_USUARIO_id)
-    REFERENCES USUARIO (id)
-    ON DELETE NO ACTION;
- 
-ALTER TABLE Usuario_TpGasto_TIPO_GASTO_USUARIO_GASTO_PLANEJAMENTO ADD CONSTRAINT FK_Usuario_TpGasto_TIPO_GASTO_USUARIO_GASTO_PLANEJAMENTO_3
-    FOREIGN KEY (fk_GASTO_id)
-    REFERENCES GASTO (id)
-    ON DELETE NO ACTION;
- 
-ALTER TABLE Usuario_TpGasto_TIPO_GASTO_USUARIO_GASTO_PLANEJAMENTO ADD CONSTRAINT FK_Usuario_TpGasto_TIPO_GASTO_USUARIO_GASTO_PLANEJAMENTO_4
-    FOREIGN KEY (fk_PLANEJAMENTO_id)
-    REFERENCES PLANEJAMENTO (id)
-    ON DELETE NO ACTION;
- 
-ALTER TABLE Perfil_Recomendacao ADD CONSTRAINT FK_Perfil_Recomendacao_1
-    FOREIGN KEY (fk_PERFIL_id)
-    REFERENCES PERFIL (id)
-    ON DELETE SET NULL;
- 
-ALTER TABLE Perfil_Recomendacao ADD CONSTRAINT FK_Perfil_Recomendacao_2
-    FOREIGN KEY (fk_RECOMENDACAO_id)
-    REFERENCES RECOMENDACAO (id)
-    ON DELETE SET NULL;
   <br><br>    
         
        
